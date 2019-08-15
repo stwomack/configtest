@@ -1,0 +1,9 @@
+---
+applications:
+  - name: configtest
+    random-route: true
+    memory: 768MB
+    instances: 1
+    path: target/config-test-0.0.1-SNAPSHOT.jar
+    services:
+      - config-server
